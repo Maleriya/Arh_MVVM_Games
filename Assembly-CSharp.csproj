@@ -8,8 +8,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace>
-    </RootNamespace>
+    <RootNamespace></RootNamespace>
     <ProjectGuid>{E81066A4-B33E-24CB-E917-7DF0C0D74A12}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -57,12 +56,29 @@
     <Compile Include="Assets\Code\Snake\Snake.cs" />
     <Compile Include="Assets\Code\Example_MVVM\ViewModel\HpViewModel.cs" />
     <Compile Include="Assets\Code\Example_MVVM\ViewModel\IHpViewModel.cs" />
+    <Compile Include="Assets\Code\Snake\Food.cs" />
     <Compile Include="Assets\Code\Example_MVVM\Model\HpModel.cs" />
     <Compile Include="Assets\Code\Example_MVVM\View\ApplyDamageView.cs" />
     <Compile Include="Assets\Code\Example_MVVM\Model\IHpModel.cs" />
     <Compile Include="Assets\Code\Example_MVVM\Starter.cs" />
     <Compile Include="Assets\Code\Example_MVVM\View\HpView.cs" />
-    <Compile Include="Assets\Code\Snake\Food.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\ModelView\FoodVM.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\View\PieceV.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\Model\SnakeHead.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\View\SnakeHeadV.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\Model\SnakePiece.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\View\GameStarter.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\ModelView\MoveVM.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\Model\IPiece.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\Model\IFood.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\View\FoodV.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\Model\Snake.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\Model\SnakeFood.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\ModelView\TimerVM.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\ModelView\InputVM.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\Model\Direction.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\View\InputV.cs" />
+    <Compile Include="Assets\Code\Snake_MVVM\View\TimerV.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -727,7 +743,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Code\Snake_MVVM\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
